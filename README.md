@@ -16,6 +16,7 @@ and the resource causing the problem was the queue that holds the requests.
 Steps to Perform Test
 
 1)Prepare executables of  server by running respective makefile in respective directory (simply execute make command).
+
 2) executables of load balancer can be prepared by : gcc load_gen.c -o load_gen -lpthread
 
 3)start the web server by executing server executable with port number as argument
