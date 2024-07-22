@@ -15,11 +15,12 @@ and the resource causing the problem was the queue that holds the requests.
 
 Steps to Perform Test
 
-1)Prepare executables of load_generator and server by running respective makefile in respective directory (simply execute make command).
+1)Prepare executables of  server by running respective makefile in respective directory (simply execute make command).
+2) executables of load balancer can be prepared by : gcc load_gen.c -o load_gen -lpthread
 
-2)start the web server by executing server executable with port number as argument
+3)start the web server by executing server executable with port number as argument
 
-3)generate load on the web server by executing load_generator executable with hostname, server port number, number of concurrent users, think time (in seconds) and test duration (in seconds) as argument
+4)generate load on the web server by executing load_generator executable with hostname, server port number, number of concurrent users, think time (in seconds) and test duration (in seconds) as argument
 
 For example:
 
